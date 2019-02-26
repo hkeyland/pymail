@@ -42,19 +42,23 @@ $ cd pymail-master
 
 Edita el archivo `sender.py` con los parámetros adecuados a tu cuenta 
 
+
+  - Subject
+
+```python
+msg['Subject'] =str("Subjec del correo").decode('utf-8')
+```
+
   - Uso de cuenta de empresa o personal
 
 Si configuraste gmail para enviar correos de un dominio propio, puedes enviarlos directamente desde ahi, es necesario que la cuenta ya este configurada y desde Gmal, puedas enviar corrso sin problemas.
 
 Si deseas usar tu cuenta personal, comenta la línea y descoemnta la otra (#).
-```python
 
+```python
 """EMAIL SETTINGS"""
 sender = 'Empresa <empresa@email.com>'
 #sender = 'Mi nombre <correo@gmail.com>'
-
-
-
 ```
 
   - Password
