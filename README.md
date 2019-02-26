@@ -9,8 +9,6 @@ Recomendaciones
   - No enviar demasiados links, se detectan como SPAM
 
 
-![N|Moodle ](./pantallas/contenido.png?raw=true "Title")
-
 ### Requerimientos
 
 Permisos en Google Accounts:
@@ -42,47 +40,19 @@ $ cd pymail-master
 
 ### Configuración
 
-Edita el archivo `config.php` con los parámetros adecuados a tu sistema 
+Edita el archivo `sender.py` con los parámetros adecuados a tu cuenta 
 
-```php
-<?php  /// Moodle Configuration File 
+  -Uso de cuenta de empresa o personal
+Si configuraste gmail para enviar correos de un dominio propio, puedes enviarlos directamente desde ahi, es necesario que la cuenta ya este configurada y desde Gmal, puedas enviar corrso sin problemas.
 
-unset($CFG);
+Si deseas usar tu cuenta personal, comenta la línea y descoemnta la otra (#).
+```python
 
-$CFG->dbtype    = 'mysql';
-$CFG->dbhost    = 'localhost';
-//$CFG->dbhost    = '192.168.2.98';
+"""EMAIL SETTINGS"""
+sender = 'Empresa <empresa@email.com>'
+#sender = 'Mi nombre <correo@gmail.com>'
 
-//$CFG->dbname    = 'moodle';
-//$CFG->dbuser    = 'moodle';
-//$CFG->dbpass    = 'M0oDL34r';
-$CFG->dbname    = 'm1';
-$CFG->dbuser    = 'root';
-$CFG->dbpass    = '';
 
-$CFG->dbpersist =  false;
-$CFG->prefix    = 'mdl_';
-
-//$CFG->wwwroot   = 'http://187.141.33.146/moodle';
-//$CFG->dirroot   = '/home/httpd/html/ciclope/moodle';
-//$CFG->dataroot  = '/home/httpd/html/ciclope/moodledata';
-
-$CFG->wwwroot   = 'http://localhost/lce-moodlev1/moodle';
-//$CFG->wwwroot   = 'http://192.168.4.36/moodle-v1/moodle';
-
-$CFG->dirroot   = '/Applications/XAMPP/xamppfiles/htdocs/lce-moodlev1/moodle';
-$CFG->dataroot  = '/Applications/XAMPP/xamppfiles/htdocs/lce-moodlev1/moodledata';
-//$CFG->dirroot   = ' C:\xampp\htdocs\lce-moodlev1\moodle';
-//$CFG->dataroot  = 'C:\xampp\htdocs\lce-moodlev1\moodledata';
-
-$CFG->admin     = 'admin';
-
-$CFG->directorypermissions = 00777;  // try 02777 on a server in Safe Mode
-
-require_once("$CFG->dirroot/lib/setup.php");
-// MAKE SURE WHEN YOU EDIT THIS FILE THAT THERE ARE NO SPACES, BLANK LINES,
-// RETURNS, OR ANYTHING ELSE AFTER THE TWO CHARACTERS ON THE NEXT LINE.
-?>
 
 ```
 
