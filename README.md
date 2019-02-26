@@ -20,28 +20,24 @@ Dentro de la [configuración de seguridad de google ](https://myaccount.google.c
 
 ### Instalación
 
-Descargamos el repo 
+Hay dos opciones via git o descargando el zip del repositorio
 
-Clonamos el repositorio en nuestro directorio web raiz
+  - Clonamos el repositorio Git y entramos
 
 ```sh
-$ cd /Applications/XAMPP/xamppfiles/htdocs/
 $ git clone https://github.com/hkeyland/pymail.git
+$ cd pymail
 ```
 
-Extraemos el respaldo de base de datos
+  - Descargamos el [zip](https://github.com/hkeyland/pymail/archive/master.zip), lo descomprimimos y entramos
+
+
+Abrimos la consola de comandos y nos posicionamos dentro de la carpeta que se genera
+
 
 ```sh
-$ cd /Applications/XAMPP/xamppfiles/htdocs/lce-moodlev1/moodleDB/
-$ unzip m1.sql.zip
-$ mysql -u root -h 127.0.0.1
-
-mysql> CREATE DATABASE m1;
-mysql> USE m1;
-mysql> SOURCE /path_to_file/m1.sql;
-#mysql> SOURCE /Applications/XAMPP/xamppfiles/htdocs/lce-moodlev1/moodleDB/m1.sql;
+$ cd pymail-master
 ```
-
 
 
 ### Configuración
