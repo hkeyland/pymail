@@ -93,7 +93,7 @@ Permite mostrar la imagen en caso de que la que se adjunta no pase los filtros d
     courseImgmd="./logo.png"
 ```
 
-Es la imagen que se adjunta de tu logo, para que funcione debe estar dentro de la carpeta pymail (carpeta que decsagaste)
+Es la imagen que se adjunta de tu logo, para que funcione debe estar dentro de la carpeta pymail (carpeta que decargaste)
 
 
   - Lista de correo
@@ -108,9 +108,4 @@ Una vez instalado y configurado abrimos la terminal y ejecutamos:
 $ python sender.py lista.txt
 ```
 
-
-
-`
-admin:admin
-`
 
