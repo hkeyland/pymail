@@ -1,6 +1,6 @@
 # Pymail
 
-![N|Moodle v1](./pantallas/home.png?raw=true "Title")
+![N|Ejemplo](./envio.png?raw=true "Envío")
 
 El programa permite el envío de correos utilizando Gmail
 
@@ -69,6 +69,31 @@ Utiliza tu usuario de gmail y el password correspondiente, independientemente si
     server.starttls()
 
 ```
+
+
+  - Contenido y imágenes
+
+Redacta el contenido en html.  
+
+```python
+ msg_html2=MIMEText('<div>'
+'<img height="60px" onerror="this.src=\'https://es.wikipedia.org/wiki/Logo_de_Google#/media/File:Google_2015_logo.svg\';" src="cid:image1" alt="Logo" >'
+'<p>Estimado(a)'+nombre+'</p>'
+'<p>Aka va el texto completo en HTML</p>'
+'</div>','html', 'utf-8')
+```
+
+`
+onerror="this.src=\'https://es.wikipedia.org/wiki/Logo_de_Google#/media/File:Google_2015_logo.svg\';"
+`
+Permite mostrar la imagen en caso de que la que se adjunta no pase los filtros de SPAM
+
+
+```python
+    courseImgmd="./logo.png"
+```
+
+Es la imagen que se adjunta de tu logo, para que funcione debe estar dentro de la carpeta pymail (carpeta que decsagaste)
 
 
   - Lista de correo
