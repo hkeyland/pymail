@@ -103,8 +103,11 @@ Es la imagen que se adjunta de tu logo, para que funcione debe estar dentro de l
 
 ### Lista de correo
 
-Crea tantas listas de correo como requieras, por ejemplo `lista.txt`
+Crea tantas listas de correo como requieras, por ejemplo `lista.txt`, el código utiliza como delimitador el caracter `|` y estan separados por:
 
+```
+Nombre| correo@loquesea.com
+```
 
 
 ### Uso
