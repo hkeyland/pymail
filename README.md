@@ -42,7 +42,7 @@ $ cd pymail-master
 
 Edita el archivo `sender.py` con los parámetros adecuados a tu cuenta 
 
-  -Uso de cuenta de empresa o personal
+  - Uso de cuenta de empresa o personal
 Si configuraste gmail para enviar correos de un dominio propio, puedes enviarlos directamente desde ahi, es necesario que la cuenta ya este configurada y desde Gmal, puedas enviar corrso sin problemas.
 
 Si deseas usar tu cuenta personal, comenta la línea y descoemnta la otra (#).
@@ -56,33 +56,35 @@ sender = 'Empresa <empresa@email.com>'
 
 ```
 
+  - Password
 
-### Acceso
+Utiliza tu usuario de gmail y el password correspondiente, independientemente si envias de cuenta personal o de un dominio porpio. El proceso de verificación para envio de correo utiliza las credenciales de Google.  
 
-Una vez instalado abrimos el navegador con los datos:
+```python
+ """GMAIL"""
+    username = 'user@gmail.com'
+    password = '*********'
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.starttls()
 
-[http://localhost/lce-moodlev1/](http://localhost/lce-moodlev1/)
+```
 
 
-![N|Moodle login](./pantallas/login.png?raw=true "Title")
+  - Lista de correo
+Crea tantas listas de correo como requieras, por ejemplo [lista.txt](./lista.txt?raw=true "Lista")
+
+
+### Uso
+
+Una vez instalado y configurado abrimos la terminal y ejecutamos:
+
+```sh
+$ python sender.py lista.txt
+```
+
+
 
 `
 admin:admin
 `
-
-
-
-### Plataforma
-
-![N|Moodle ](./pantallas/moodle.png?raw=true "Title")
-
-![N|Moodle ](./pantallas/moodle-2.png?raw=true "Title")
-
-
-### Para Dev
-
-Editar el archivo .fla para modificar la ruta de login de moodle
-
-![N|Moodle ](./pantallas/edit-fla-login.png?raw=true "Title")
-
 
