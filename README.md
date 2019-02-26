@@ -100,8 +100,11 @@ Permite mostrar la imagen en caso de que la que se adjunta no pase los filtros d
 Es la imagen que se adjunta de tu logo, para que funcione debe estar dentro de la carpeta pymail (carpeta que decargaste)
 
 
-  - Lista de correo
-Crea tantas listas de correo como requieras, por ejemplo [lista.txt](./lista.txt?raw=true "Lista")
+
+### Lista de correo
+
+Crea tantas listas de correo como requieras, por ejemplo `lista.txt`
+
 
 
 ### Uso
