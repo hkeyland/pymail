@@ -1,6 +1,6 @@
 # Pymail
 
-![N|Ejemplo](./envio.png?raw=true "Envío")
+![N|Ejemplo](./envio.jpg?raw=true "Envío")
 
 El programa permite el envío de correos utilizando Gmail
 
